@@ -1,49 +1,89 @@
+@import '~antd/dist/antd.css';
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  color: #878f96;
 }
 .container{
-  background-color: aliceblue;
+  background-color: #D0D3E1;
   min-height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: max-content 1fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 7rem 4rem;
+
 }
 .menu{
-  width: 100%;
+padding: 1rem;
+}
+.menu li{
+  font-size: 20px;
+  padding: .5rem 0 .5rem 2rem;
+}
 
-  border-radius: 20px;
-  margin-bottom: 1rem;
+.menu-item p{
+padding-left: .5rem;
+  display: inline;
+  vertical-align: middle;
 }
-.menu > h3{
-  display: inline-block;
-  padding: 1rem;
-  color: #424242;
-  font-weight: 400;
-  font-size: 26px;
-  border-radius: 10px;
-}
-.menu > h3:hover{
-  background-color: rgb(194, 226, 255);
+.menu li:hover{
+  background-color: #E4E7F5;
   cursor: pointer;
-  color: white;
+  border-radius: 5px;
+  color: #707FDD;
+}
+.menu li svg{
+  width: 30px;
+  display: inline;
+  vertical-align: middle;
+}
+.menu li:hover svg{
+  fill: #707FDD;
+}
+.menu-label{
+  padding-left: 1.5rem;
+  font-size: 15px;
+  font-weight: 400;
 }
 .content{
+  max-width: 1920px;
   background-color: white;
   height: 100%;
   width: 100%;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  border-radius: 20px;
+  box-shadow: 0 1px 12px rgba(0,0,0,0.01), 0 1px 12px rgba(0,0,0,0.01);
+  border-radius: 0px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  border-radius: 5px;
 
 }
 h1{
 padding: 1rem;
   color: #424242;
 }
+.sidebar{
+  padding: 1rem;
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+  background-color: #F1F2F7;
+}
+.logo{
+  color: #5A67BA;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #DCDEE8;
+  font-size: 30px;
+}
+/* img{
+  width: 100%;
+} */
