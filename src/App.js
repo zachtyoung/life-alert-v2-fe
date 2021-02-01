@@ -3,6 +3,7 @@ import './App.css';
 import Note from "./assets/Note"
 import Med from "./assets/Med"
 import Dash from "./assets/Dash"
+import Dashboard from './components/Dashboard'
 import {
   BrowserRouter as Router,
   Switch,
@@ -36,7 +37,7 @@ function App() {
         <div className="main">
         <Switch>
           <Route exact path="/">
-            Dashboard
+            <Dashboard/>
           </Route>
           <Route path="/meds">
             Meds
