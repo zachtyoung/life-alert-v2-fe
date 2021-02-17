@@ -58,10 +58,10 @@ function Dashboard() {
       </ResponsiveContainer>
             </div>
             <div className="data-container">
-            <div className='data-card'>Events:2</div>
-            <div className='data-card'>Average Duration: 5 minutes</div>
-            <div className='data-card'>Max dB: 99</div>
-            <div className='data-card'>Intensity: 120</div>
+            <div><p>Events</p><div className='data-card'>2</div></div>
+            <div><p>Average Duration</p><div className='data-card'>5</div></div>
+            <div><p>Max dB</p><div className='data-card'>99</div></div>
+            <div><p>Intensity</p><div className='data-card'>120</div></div>
             </div>
         </div>
     )

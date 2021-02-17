@@ -20,7 +20,6 @@ function App() {
         <div className="sidebar">
           <div className="logo">Life Alert</div>
           <div className="menu">
-            <span className="menu-label">Menu</span>
             <ul className="menu-items">
               <NavLink to='/' >
             <li className='menu-item'><Dash/><p>Dashboard</p></li>
