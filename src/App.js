@@ -17,8 +17,9 @@ function App() {
     <div className="container">
       <div className="layer">
       <div className='content'>
+      <div className="logo">Life Alert</div>
+      <div className='header'>Febuary 17th 2021</div>
         <div className="sidebar">
-          <div className="logo">Life Alert</div>
           <div className="menu">
             <ul className="menu-items">
               <NavLink to='/' >
@@ -33,6 +34,7 @@ function App() {
             </ul>
           </div>
         </div>
+       
         <div className="main">
         <Switch>
           <Route exact path="/">
