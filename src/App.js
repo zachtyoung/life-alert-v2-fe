@@ -10,15 +10,17 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-
+import icon from './assets/LA-icon.png'
+import Footer from "./components/Footer";
+import CalendarComponent from './components/Calendar'
 function App() {
   return (
     <Router>
     <div className="container">
       <div className="layer">
       <div className='content'>
-      <div className="logo">Life Alert</div>
-      <div className='header'>Febuary 17th 2021</div>
+      <div className="logo"><img src={icon}/></div>
+      <div className='header'><h2>Febuary 18th 2021</h2></div>
         <div className="sidebar">
           <div className="menu">
             <ul className="menu-items">
@@ -32,6 +34,9 @@ function App() {
               <li className='menu-item'><Note/><p>Notes</p></li>
               </NavLink>
             </ul>
+          </div>
+          <div className="calendar">
+            <CalendarComponent className='ant-cal'/>
           </div>
         </div>
        
@@ -50,7 +55,7 @@ function App() {
         </div>
       </div>
       </div>
-
+<Footer/>
     </div>
     </Router>
   )
